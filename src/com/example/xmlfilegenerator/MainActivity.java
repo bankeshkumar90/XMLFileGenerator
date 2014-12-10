@@ -69,11 +69,9 @@ public class MainActivity extends Activity {
 
 				f_name = fname.getText().toString();
 				m_name = mname.getText().toString();
-				l_name = lname.getText().toString();
+				l_name = lname.getText().toString();//fname
 			
-				
-				
-				
+			
 				try {
 					DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory
 							.newInstance();
