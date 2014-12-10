@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText 
+        android:id="@+id/firstname"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Please Enter First Name"
+        android:inputType="textCapCharacters" />
+    
+        <EditText 
+        android:id="@+id/middlename"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_below="@+id/firstname"
+        android:hint="Please Enter Middle Name"
+        android:inputType="textCapCharacters" />
+            <EditText 
+        android:id="@+id/lastname"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_below="@+id/middlename"
+        android:hint="Please Enter Last Name"
+        android:inputType="textCapCharacters" />
+               <EditText 
+        android:id="@+id/fathername"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_below="@+id/lastname"
+        android:hint="Please Enter Last Name"
+        android:inputType="textCapCharacters" />
+            
+              
+<ScrollView
+    	android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fathername"
+        android:scrollbars="none"
+        android:layout_marginBottom="50dp"
+    	 >
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+        android:text="@string/hello_world" />
+</ScrollView>
+    	<Button 
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Generate XML"/>
+</RelativeLayout>
